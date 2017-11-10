@@ -1,0 +1,209 @@
+Afghanistan	AF	1149361
+Albania	AL	783754
+Algeria	DZ	2589581
+Andorra	AD	3041565
+Angola	AO	3351879
+Antigua and Barbuda	AG	3576396
+Argentina	AR	3865483
+Armenia	AM	174982
+Aruba	AW	3577279
+Australia	AU	2077456
+Austria	AT	2782113
+Azerbaijan	AZ	587116
+Bahrain	BH	290291
+Bangladesh	BD	1210997
+Barbados	BB	3374084
+Belarus	BY	630336
+Belgium	BE	2802361
+Belize	BZ	3582678
+Benin	BJ	2395170
+Bermuda	BM	3573345
+Bhutan	BT	1252634
+Bolivia	BO	3923057
+Bosnia and Herzegovina	BA	3277605
+Botswana	BW	933860
+Brazil	BR	3469034
+Brunei	BN	1820814
+Bulgaria	BG	732800
+Burkina Faso	BF	2361809
+Burundi	BI	433561
+Cambodia	KH	1831722
+Cameroon	CM	2233387
+Canada	CA	6251999
+Cape Verde	CV	3374766
+Central African Republic	CF	239880
+Chad	TD	2434508
+Chile	CL	3895114
+Colombia	CO	3686110
+Comoros	KM	921929
+Cook Islands	CK	1899402 #something is wrong here
+Costa Rica	CR	3624060 #something is wrong with this url
+Croatia	HR	3202326
+Cuba	CU	3562981
+Curacao	CW	7626836
+Cyprus	CY	146669
+Czech Republic	CZ	3077311
+Democratic Republic of the Congo	CD	203312
+Denmark	DK	2623032
+Djibouti	DJ	223816
+Dominica	DM	3575830
+Dominican Republic	DO	3508796
+Ecuador	EC	3658394
+Egypt	EG	357994
+El Salvador	SV	3585968
+Equatorial Guinea	GQ	2309096
+Eritrea	ER	338010
+Estonia	EE	453733
+Ethiopia	ET	337996
+Faroe Islands	FO	2622320 #something is wrong with this url
+Federated States of Micronesia	FM	2081918 #something is wrong with this url
+Fiji	FJ	2205218
+Finland	FI	660013
+France	FR	3017382 #something is wrong with this url
+Gabon	GA	2400553
+Georgia	GE	614540
+Germany	DE	2921044
+Ghana	GH	2300660
+Greece	GR	390903
+Grenada	GD	3580239
+Guatemala	GT	3595528 #problem with URL
+Guinea Bissau	GW	2372248
+Guinea	GN	2420477
+Guyana	GY	3378535
+Haiti	HT	3723988
+Honduras	HN	3608932 #problem with URL
+Hungary	HU	719819 #problem with URL
+Iceland	IS	2629691
+India	IN	1269750
+Indonesia	ID	1643084
+Iran	IR	130758
+Iraq	IQ	99237
+Ireland	IE	2963597
+Israel	IL	294640
+Italy	IT	3175395
+Ivory Coast	CI	2287781
+Jamaica	JM	3489940
+Japan	JP	1861060
+Jordan	JO	248816
+Kazakhstan	KZ	1522867
+Kenya	KE	192950
+Kiribati	KI	4030945
+Kuwait	KW	285570
+Kyrgyzstan	KG	1527747
+Laos	LA	1655842
+Latvia	LV	458258
+Lebanon	LB	272103
+Lesotho	LS	932692
+Liberia	LR	2275384
+Libya	LY	2215636
+Liechtenstein	LI	3042058
+Lithuania	LT	597427
+Luxembourg	LU	2960313
+Macau	MO	1821275
+Madagascar	MG	1062947
+Malawi	MW	927384
+Malaysia	MY	1733045
+Maldives	MV	1282028
+Mali	ML	2453866
+Malta	MT	2562770
+Marshall Islands	MH	2080185
+Mauritania	MR	2378080
+Mauritius	MU	934292
+Mexico	MX	3996063
+Moldova	MD	617790
+Monaco	MC	2993457
+Mongolia	MN	2029969
+Montenegro	ME	3194884
+Morocco	MA	2542007
+Mozambique	MZ	1036973
+Myanmar	MM	1327865
+Namibia	NA	3355338
+Nauru	NR	2110425
+Nepal	NP	1282988
+Netherlands	NL	2750405
+New Zealand	NZ	2186224
+Nicaragua	NI	3617476
+Niger	NE	2440476
+Nigeria	NG	2328926
+Niue	NU	4036232
+North Korea	KP	1873107
+Norway	NO	3144096
+Oman	OM	286963
+Pakistan	PK	1168579
+Palau	PW	1559582
+Palestine	PS	6254930
+Panama	PA	3703430
+Papua New Guinea	PG	2088628
+Paraguay	PY	3437598
+People's Republic of China	CN	1814991
+Peru	PE	3932488
+Philippines	PH	1694008
+Poland	PL	798544
+Portugal	PT	2264397
+Qatar	QA	289688
+Republic of Macedonia	MK	718075
+Republic of the Congo	CG	2260494
+Romania	RO	798549
+Russia	RU	2017370
+Rwanda	RW	49518
+Saint Kitts and Nevis	KN	3575174
+Saint Lucia	LC	3576468
+Saint Vincent and the Grenadines	VC	3577815
+Samoa	WS	4034894
+San Marino	SM	3168068
+São Tomé and Príncipe	ST	2410758
+Saudi Arabia	SA	102358
+Senegal	SN	2245662
+Serbia	RS	6290252
+Seychelles	SC	241170
+Sierra Leone	SL	2403846
+Singapore	SG	1880251
+Sint Maarten	SX	7609695
+Slovakia	SK	3057568
+Slovenia	SI	3190538
+Solomon Islands	SB	2103350
+Somalia	SO	51537
+South Africa	ZA	953987
+South Korea	KR	1835841
+South Sudan	SS	7909807
+Spain	ES	2510769
+Sri Lanka	LK	1227603
+Sudan	SD	366755
+Suriname	SR	3382998
+Swaziland	SZ	934841
+Sweden	SE	2661886
+Switzerland	CH	2658434
+Syria	SY	163843
+Taiwan	TW	1668284
+Tajikistan	TJ	1220409
+Tanzania	TZ	149590
+Thailand	TH	1605651
+The Bahamas	BS	3572887
+The Gambia	GM	2413451
+Timor-Leste	TL	1966436
+Togo	TG	2363686
+Tonga	TO	4032283
+Trinidad and Tobago	TT	3573591
+Tunisia	TN	2464461
+Turkey	TR	298795
+Turkmenistan	TM	1218197
+Tuvalu	TV	2110297
+Uganda	UG	226074
+Ukraine	UA	690791
+United Arab Emirates	AE	290557
+United Kingdom	GB	2635167
+United States	US	6252001
+Uruguay	UY	3439705
+Uzbekistan	UZ	1512440
+Vanuatu	VU	2134431
+Vatican City	VA	3164670
+Venezuela	VE	3625428
+Vietnam	VN	1562822
+Yemen	YE	69543
+Zambia	ZM	895949
+Zimbabwe	ZW	878675
+Hong Kong	HK	1819730
+Antarctica	AQ	6697173
+Puerto Rico	PR	4566966
+Tibet	TI	1279685
+
