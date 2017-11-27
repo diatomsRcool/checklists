@@ -36,8 +36,8 @@ Chad	TD	2434508
 Chile	CL	3895114
 Colombia	CO	3686110
 Comoros	KM	921929
-Cook Islands	CK	1899402 #something is wrong here
-Costa Rica	CR	3624060 #something is wrong with this url
+Cook Islands	CK	1899402
+Costa Rica	CR	3624060
 Croatia	HR	3202326
 Cuba	CU	3562981
 Curacao	CW	7626836
@@ -55,24 +55,24 @@ Equatorial Guinea	GQ	2309096
 Eritrea	ER	338010
 Estonia	EE	453733
 Ethiopia	ET	337996
-Faroe Islands	FO	2622320 #something is wrong with this url
-Federated States of Micronesia	FM	2081918 #something is wrong with this url
+Faroe Islands	FO	2622320
+Federated States of Micronesia	FM	2081918
 Fiji	FJ	2205218
 Finland	FI	660013
-France	FR	3017382 #something is wrong with this url
+France	FR	3017382
 Gabon	GA	2400553
 Georgia	GE	614540
 Germany	DE	2921044
 Ghana	GH	2300660
 Greece	GR	390903
 Grenada	GD	3580239
-Guatemala	GT	3595528 #problem with URL
+Guatemala	GT	3595528
 Guinea Bissau	GW	2372248
 Guinea	GN	2420477
 Guyana	GY	3378535
 Haiti	HT	3723988
-Honduras	HN	3608932 #problem with URL
-Hungary	HU	719819 #problem with URL
+Honduras	HN	3608932
+Hungary	HU	719819
 Iceland	IS	2629691
 India	IN	1269750
 Indonesia	ID	1643084
@@ -206,4 +206,41 @@ Hong Kong	HK	1819730
 Antarctica	AQ	6697173
 Puerto Rico	PR	4566966
 Tibet	TI	1279685
-
+Mayotte		1024031
+Territory of the French Southern and Antarctic Lands		1546748
+Territory of Heard Island and McDonald Islands		1547314
+Cocos Islands		1547376
+Christmas Island		2078138
+New Calendonia		2139685
+Norfolk Island		2155115
+Gibraltar		2411586
+Jersey		3042142
+Isle of Man		3042225
+Guernsey		3042362
+Saint Helena Ascension and Tristan da Cunha		3370751
+Bouvet Island		3371123
+French Guiana		3381670
+Saint-Pierre et Miquelon		3424932
+Greenland		3425505
+Falkland Islands		3474414
+South Georgia and the South Sandwich Islands		3474415
+Martinique		3570311
+Anguilla		3573511
+Turks and Caicos Islands		3576916
+British Virgin Islands		3577718
+Montserrat		3578097
+Saint Martin		3578421
+Saint Barthelemy		3578476
+Guadeloupe		3579143
+Cayman Islands		3580718
+French Polynesia		4030656
+Pitcairn Henderson Ducie and Oeno Islands		4030699
+Tokelau		4031074
+Wallis et Futuna		4034749
+Mariana Islands		4041468
+Guam		4043988
+US Virgin Islands		4796775
+US Minor Outlying Islands		5854968
+Bonaire Saint Eustatius and Saba		7626844
+Kosovo		831053
+Reunion		935317
