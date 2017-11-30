@@ -27,6 +27,8 @@ for line in in_file:
 	country = row[0]
 	print(country)
 	id_dict[country] = id
+id_dict['Sao Tome and Principe'] = '2410758'
+id_dict['Micronesia'] = '2081918'
 pickle.dump(id_dict, open('id_dict.p', 'wb'))
 
 for line in p_file:
