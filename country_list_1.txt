@@ -135,13 +135,13 @@ Palestine	PS	6254930
 Panama	PA	3703430
 Papua New Guinea	PG	2088628
 Paraguay	PY	3437598
-People's Republic of China	CN	1814991
+China	CN	1814991
 Peru	PE	3932488
 Philippines	PH	1694008
 Poland	PL	798544
 Portugal	PT	2264397
 Qatar	QA	289688
-Republic of Macedonia	MK	718075
+Macedonia	MK	718075
 Republic of the Congo	CG	2260494
 Romania	RO	798549
 Russia	RU	2017370
@@ -151,7 +151,7 @@ Saint Lucia	LC	3576468
 Saint Vincent and the Grenadines	VC	3577815
 Samoa	WS	4034894
 San Marino	SM	3168068
-São Tomé and Príncipe	ST	2410758
+Sao Tome and Principe	ST	2410758
 Saudi Arabia	SA	102358
 Senegal	SN	2245662
 Serbia	RS	6290252
@@ -211,7 +211,7 @@ Territory of the French Southern and Antarctic Lands		1546748
 Territory of Heard Island and McDonald Islands		1547314
 Cocos Islands		1547376
 Christmas Island		2078138
-New Calendonia		2139685
+New Caledonia		2139685
 Norfolk Island		2155115
 Gibraltar		2411586
 Jersey		3042142
@@ -234,13 +234,13 @@ Saint Barthelemy		3578476
 Guadeloupe		3579143
 Cayman Islands		3580718
 French Polynesia		4030656
-Pitcairn Henderson Ducie and Oeno Islands		4030699
+pitcairn_henderson_ducie_and_oeno_islands		4030699
 Tokelau		4031074
 Wallis et Futuna		4034749
 Mariana Islands		4041468
 Guam		4043988
 US Virgin Islands		4796775
 US Minor Outlying Islands		5854968
-Bonaire Saint Eustatius and Saba		7626844
+Caribbean Netherlands		7626844
 Kosovo		831053
 Reunion		935317

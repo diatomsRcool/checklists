@@ -1,0 +1,3 @@
+identifier	full_reference
+R01	FreshData. https://github.com/gimmefreshdata/freshdata/wiki/api Accessed November 2017
+R02	GeoNames, http://www.geonames.org/, Accessed Feb 2017

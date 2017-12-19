@@ -1,0 +1,21 @@
+Afrotropic	Tropical and subtropical moist broadleaf forests	East African montane forests	Sudan	
+Afrotropic	Tropical and subtropical moist broadleaf forests	Ethiopian montane forests	Sudan	
+Afrotropic	Tropical and subtropical grasslands savannas and shrublands	East Sudanian savanna	Sudan	
+Afrotropic	Tropical and subtropical grasslands savannas and shrublands	Northern Acacia-Commiphora bushlands and thickets	Sudan	
+Afrotropic	Tropical and subtropical grasslands savannas and shrublands	Northern Congolian forest-savanna mosaic	Sudan	
+Afrotropic	Tropical and subtropical grasslands savannas and shrublands	Sahelian Acacia savanna	Sudan	
+Afrotropic	Tropical and subtropical grasslands savannas and shrublands	Somali Acacia-Commiphora bushlands and thickets	Sudan	
+Afrotropic	Tropical and subtropical grasslands savannas and shrublands	Victoria Basin forest-savanna mosaic	Sudan	
+Afrotropic	Flooded grasslands and savannas	Saharan flooded grasslands	Sudan	
+Afrotropic	Montane grasslands and shrublands	Ethiopian montane grasslands and woodlands	Sudan	
+Afrotropic	Deserts and xeric shrublands	East Saharan montane xeric woodlands	Sudan	
+Afrotropic	Deserts and xeric shrublands	Ethiopian xeric grasslands and shrublands	Sudan	
+Afrotropic	Deserts and xeric shrublands	Red Sea coastal desert	Sudan	
+Palearctic	Deserts and xeric shrublands	Sahara desert	Sudan	
+Palearctic	Deserts and xeric shrublands	South Saharan steppe and woodlands	Sudan	
+Palearctic	Deserts and xeric shrublands	Tibesti-Jebel Uweinat montane xeric woodlands	Sudan	
+Palearctic	Flooded grasslands and savannas	Saharan halophytics	Western Sahara	
+Palearctic	Mediterranean forests woodlands and shrub	Mediterranean acacia-argania dry woodlands and succulent thickets	Western Sahara	
+Palearctic	Deserts and xeric shrublands	Atlantic coastal desert	Western Sahara	
+Palearctic	Deserts and xeric shrublands	North Saharan steppe and woodlands	Western Sahara	
+Palearctic	Tundra	Arctic desert	Svalbard and Jan Mayen	
