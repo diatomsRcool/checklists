@@ -12,7 +12,9 @@ The effechecka API was used in two steps. First, the query has to be submitted, 
 
 ## Making the TraitBank files
 
-Effechecka gives lists back as tsv files. These need to be translated into DwC format for upload into TraitBank. This requires two pieces of code that process each list. The first block of code makes the dictionaries needed to keep track of all the taxon ids and parent ids. The second block of code generates the TraitBank files. These files are compressed and uploaded into EOL opendata for eventual upload into TraitBank. Each country will have its own TraitBank DwC-A.
+Effechecka gives lists back as tsv files. These files are downloaded into a checklists directory with the id # used to tag the wkt string as the file name. When all the checklists are downloaded, the directory is compressed and then is ready for download onto a local machine. These files are much too large for GitHub, so they need to be downloaded locally for further processing.
+
+These need to be translated into DwC format for upload into TraitBank. This requires two pieces of code that process each list. The first block of code makes the dictionaries needed to keep track of all the taxon ids and parent ids. The second block of code generates the TraitBank files. These files are compressed and uploaded into EOL opendata for eventual upload into TraitBank. Each country will have its own TraitBank DwC-A.
 
 ## File Descriptions
 
