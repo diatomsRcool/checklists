@@ -1,11 +1,16 @@
+#This code iterates over all the country checklists and collects the bird data. The output is a list of all the
+#countries with the number of bird taxa and number of bird observations.
+
 import urllib.request
 from bs4 import BeautifulSoup
 import pickle
 import json
 import re
 
-in_file = open('/Users/annethessen/checklists/country_list_1.txt', 'r')
+in_file = open('/Users/annethessen/checklists/country_list_1.txt', 'r') #list of countries and their geonames ID
 
+#This function normalizes the length of the hierarchy returned by effechecka. Sometimes taxa come back
+#with different numbers of parents
 def norm_len(hi_class):
     #print(len(hi_class))
     skip = False
@@ -51,6 +56,7 @@ def norm_len(hi_class):
 
 countries = []
 
+#This creates a list of countries with the spaces substituted with underscores and with their ids
 for line in in_file:
 	line = line.strip('\n')
 	row = line.split('\t')
@@ -66,10 +72,13 @@ for line in in_file:
 	countries.append(m)
 #print(countries)
 
-out_file = open('bird_data.txt', 'w')
+out_file = open('bird_data.txt', 'w') #resulting data file
 
 out_file.write('country	geonames_id	#bird_species	#_bird_obs\n')
 
+#using the list of countries made above, we will find the corresponding data directory and iterate over the
+#checklist that was returned from effechecka. All the species that are in Aves will be captured and used in
+#calculations
 for y in countries:
 	country = y[0]
 	print(country)
