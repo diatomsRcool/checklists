@@ -1,5 +1,6 @@
 #This code creates a look up dictionary from a tsv list of countries and their continents.
 #The dictionary has country as key and continent as value
+#The input file is a list of countries and their continents modified from Wikipedia.
 
 import pickle
 import re
