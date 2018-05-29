@@ -20,6 +20,12 @@ Build_Taxon.ipynb - Jupyter notebook that takes a tsv checklist and creates the 
 
 Make_TB_file.ipynb - Jupyter notebook that reads the tsv checklist and creates the Darwin Core archive needed for upload into TraitBank. The taxon and parent IDs are managed via dictionaries that were made using Build_Taxon.ipynb
 
+bird_data.txt - a list of all countries, their geonames ID, the number of bird species, and the number of bird observations. this is the output from get_birds.py
+
+build_continent_dict.py - This code creates a look up dictionary from a list of contries and their continents. Country is the key and continent is the value. This code created continent_dict.p
+
+checklist_script_gen.sh - A bash script for creating the effechecka queries from a list of wkt strings (wkt_string.tsv). It also creates two other scripting files, checklist_status.sh and checklist_download.sh. These are the scripts that run in Jenkins. Every time this GitHub repository is updated, the Jenkins job is triggered. So, if the wkt_string.tsv file is updated, the scripts get run automatically.
+
 continent_dict.p - a dictionary for looking up a country's continent. Country name with underscore instead of spaces is the key and the two-letter continent abbreviation is the value. Use the Python pickle module to load the dictionary.
 
 country_dict.p - a dictionary for looking up country by geonames ID. Geonames ID is the key and country is the value. Use the Python pickle module to load the dictionary.
@@ -42,3 +48,22 @@ make_taxon_records_data.py - This code created a file called taxon_data.txt that
 
 make_wkstring.py - This code makes wkt strings for every polygon in low_res_countries.json. These are the wkt strings used by checklists_script_gen.sh
 
+parent_dict.p - This dictionary is for looking up a parent for any taxon. The taxon is the key and its parent is the value. It is created by make_taxon_dict.py and Build_Taxon.ipynb
+
+polygon_dict.p - This dictionary allows looking up a polygon by the corresponding country's geonames id. It was created by make_country_dict.py
+
+reduce_polygon.ipynb - This code was used to reduce the length of the polygons that were too large to fit in the API query
+
+taxon_data.txt - The results of make_taxon_records_data.py. It is a list of all families from each country and their number of observations.
+
+taxon_id.p - This dictionary is for looking up the taxon id for any taxon. The taxon is the key and its id is the value. It is created by make_taxon_dict.py and Build_Taxon.ipynb. The identifier is question is local and only valid within the Darwin Core Archive.
+
+tb_measurement.txt - One of the data files for the TraitBank Darwin Core Archive. Created by make_tb_file.py or Make_TB_file.ipynb
+
+tb_occurrence.txt - One of the data files for the TraitBank Darwin Core Archive. Created by make_tb_file.py or Make_TB_file.ipynb
+
+tb_taxon.txt - One of the data files for the TraitBank Darwin Core Archive. Created by make_tb_file.py or Make_TB_file.ipynb
+
+test_country.txt - I list of only a few countries used for testing purposes.
+
+wkt_string.tsv - A list with one wkt string for each country and its geonames ID. This file is used by checklists_script_gen.sh to formulate the effechecka queries
