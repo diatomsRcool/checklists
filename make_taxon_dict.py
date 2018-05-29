@@ -1,10 +1,13 @@
-#this code makes the dictionaries we need to build the TraitBank file
+#This code creates two dictionaries that are needed for creating the Darwin Core Archive files used by EOL TraitBank. The dictionaries link scientific names to their taxon identifiers, which are also generated in this notebook, and link scientific names to the taxon identifiers of their parents. That way any taxon identifier or parent identifier can be looked up using a scientific name.
+
+#The code below imports the needed libraries and data file. The in_file is the tsv output from an effechecka query. The output of this notebook are two pickled dictionaries relating taxa to their identifiers and their parents.
 
 import pickle
 
 n = 'australia'
 
 in_file = open('/Volumes/PCCOMP/effechecka_country_results/' + n + '/' + n + '.tsv', 'r')
+#This path will have to be changed to accommodate your file locations on your local machine
 
 #this function checks the parent of a taxon to see if it is blank. The purpose of this function is to avoid replacing
 #a named parent with a blank if a data record just happens to be missing its parent
@@ -95,7 +98,7 @@ next(in_file)
 for line in in_file:
 	line = line.strip('\n')
 	row = line.split('\t')
-	taxon_string = row[1].split('|') #the json result includes a pipe-delimited higher classification
+	taxon_string = row[1].split('|') #the tsv result includes a pipe-delimited higher classification
 	for i,j in enumerate(taxon_string): #this for loop removes any incertae sedis. We don't want that as a taxon.
 		if j == 'incertae sedis':
 			taxon_string[i] = ''
