@@ -8,7 +8,7 @@ GeoNames has an API that allows users to look up a country ID and get the geoloc
 
 ## Getting the lists
 
-The effechecka API was used in two steps. First, the query has to be submitted, then the results downloaded. Since these are very large lists, they can take some time between the initial query and completion of the list. The first time a query is submitted, effechecka starts compiling the list. The second time it is submitted, the results are downloaded, if they are ready. If they are not ready, you will have to submit the query again later. The Jenkins job will automatically do this for you, but not the jupyter notebook. The code for the Jenkins job is in the checklists_script_gen.sh and .
+The effechecka API was used in two steps. First, the query has to be submitted, then the results downloaded. Since these are very large lists, they can take some time between the initial query and completion of the list. The first time a query is submitted, effechecka starts compiling the list. The second time it is submitted, the results are downloaded, if they are ready. If they are not ready, you will have to submit the query again later. The Jenkins job will automatically do this for you, but not the jupyter notebook. The code for the Jenkins job is in checklists_script_gen.sh.
 
 ## Making the TraitBank files
 
