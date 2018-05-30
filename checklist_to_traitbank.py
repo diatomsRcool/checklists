@@ -12,8 +12,8 @@ polygons = pickle.load(i)
 #This file holds the summary statistics for each country. The first list removes any old
 #version before starting a new version
 #the file paths will be to your local machine
-os.remove('/Volumes/PCCOMP/effechecka_test_results/country_stats.txt')
-out_file_x = open('/Volumes/PCCOMP/effechecka_test_results/country_stats.txt', 'a')
+os.remove('/Volumes/PCCOMP/effechecka_country_results/country_stats.txt')
+out_file_x = open('/Volumes/PCCOMP/effechecka_country_results/country_stats.txt', 'a')
 out_file_x.write('country	geonamesid	taxa	obs\n')
 
 #making a list of countries and their geonames ids to iterate over
@@ -237,9 +237,9 @@ for y in countries:
 	print('dictionaries complete') #make sure the code gets to the end
 	#creating all the output files for the TraitBank DwC-A
 	#these file paths will be to your local machine
-	out_file = open('/Volumes/PCCOMP/effechecka_test_results/' + country + '/tb_measurement.txt', 'w')
-	out_file_t = open('/Volumes/PCCOMP/effechecka_test_results/' + country + '/tb_taxon.txt', 'w')
-	out_file_c = open('/Volumes/PCCOMP/effechecka_test_results/' + country + '/tb_occurrence.txt', 'w')
+	out_file = open('/Volumes/PCCOMP/effechecka_country_results/' + country + '/tb_measurement.txt', 'w')
+	out_file_t = open('/Volumes/PCCOMP/effechecka_country_results/' + country + '/tb_taxon.txt', 'w')
+	out_file_c = open('/Volumes/PCCOMP/effechecka_country_results/' + country + '/tb_occurrence.txt', 'w')
 	out_file.write('measurementID	occurrenceID	parentMeasurementID	measurementOfTaxon	measurementType	measurementValue	referenceID	contributor	source\n')
 	out_file_t.write('taxonID	scientificName	parentNameUsageID	taxonRank\n')
 	out_file_c.write('occurrenceID	taxonID\n')
