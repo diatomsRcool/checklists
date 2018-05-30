@@ -4,19 +4,17 @@ This repository contains code for making checklists for countries using the effe
 
 ## Getting the Polygons
 
-GeoNames has an API that allows users to look up a country ID and get the geolocated polygon. Some of these polygons were too long, so the resolution of the national borders had to be reduced. The polygons were translated into wkt strings for submission to effechecka. Sometimes these wkt strings were too long to be submitted to the API. In that case, they had to be shortened by reducing the resolution using reduce_polygon.ipynb.
+GeoNames has an API that allows users to look up a country ID and get the geolocated polygon. The polygons were translated into wkt strings for submission to effechecka. Sometimes these wkt strings were too long to be submitted to the API. In that case, they had to be shortened by reducing the resolution using reduce_polygon.ipynb.
 
 ## Getting the lists
 
-The effechecka API was used in two steps. First, the query had to be submitted, then the results downloaded. Since these are very large lists, they can take some time between the initial query and completion of the list. The first time a query is submitted, effechecka starts compiling the list. The second time it is submitted, the results are downloaded, if they are ready. If they are not ready, you will have to submit the query again later. The Jenkins job will automatically do this for you, but not the jupyter notebook. The code for the Jenkins job is in checklists_script_gen.sh.
+The effechecka API was used in two steps. First, the query had to be submitted, then the results downloaded. Since these are very large lists, it can take some time between the initial query and completion of the list. The first time a query is submitted, effechecka starts compiling the list. The second time it is submitted, the results are downloaded, if they are ready. If they are not ready, you will have to submit the query again later. The Jenkins job will automatically do this for you, but not the jupyter notebook. The code for the Jenkins job is in checklists_script_gen.sh.
 
-When all of the checklists are complete and downloaded, the scripts compress all the lists. These need to be downloaded to a local machine outside of this directory because the files will be too large for GitHub.
+Effechecka gives lists back as tsv files. These files are downloaded into a checklists directory with the id # used to tag the wkt string as the file name. When all of the checklists are complete and downloaded, the script compresses all the lists in checklist.tar.gz. This needs to be downloaded to a local machine outside of this directory because the files will be too large for GitHub. Every country has a checklist file and the filename is the country's geonames id. Checklists need to be renamed with the country name (all lowercase and underscores for spaces) and placed in a directory that is also named after the country. This is done with rename_checklist.py. When you are done, you shoud have a directory that has a subdirectory for every country, with the corresponding tsv checklist file in that directory.
 
 ## Making the TraitBank files
 
-Effechecka gives lists back as tsv files. These files are downloaded into a checklists directory with the id # used to tag the wkt string as the file name. When all the checklists are downloaded, the directory is compressed and then is ready for download onto a local machine. These files are much too large for GitHub, so they need to be downloaded locally for further processing.
-
-These need to be translated into DwC format for upload into TraitBank. This requires two pieces of code that process each list. The first block of code makes the dictionaries needed to keep track of all the taxon ids and parent ids. The second block of code generates the TraitBank files. These files are compressed and uploaded into EOL opendata for eventual upload into TraitBank. Each country will have its own TraitBank DwC-A.
+These need to be translated into DwC format for upload into TraitBank. This is done with checklist_to_traitbank.py which uses functions in checklist_functions.py. The first block of code makes the dictionaries needed to keep track of all the taxon ids and parent ids. The second block of code generates the TraitBank files. These files are compressed and uploaded into EOL opendata for eventual upload into TraitBank. Each country will have its own TraitBank DwC-A.
 
 ## File Descriptions
 
@@ -61,6 +59,8 @@ parent_dict.p - This dictionary is for looking up a parent for any taxon. The ta
 polygon_dict.p - This dictionary allows looking up a polygon by the corresponding country's geonames id. It was created by make_country_dict.py
 
 reduce_polygon.ipynb - This code was used to reduce the length of the polygons that were too large to fit in the API query
+
+rename_checklist.py - This code changes file names from a geonames id to a country name and creates directories for each country.
 
 taxon_data.txt - The results of make_taxon_records_data.py. It is a list of all families from each country and their number of observations.
 
