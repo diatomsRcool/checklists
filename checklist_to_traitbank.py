@@ -1,4 +1,5 @@
-#This code combines the functions
+#This code transforms the effechecka output into TraitBank DwC files
+#Be sure that the input and output file paths are set to your local machine
 
 import re
 import pickle
@@ -10,6 +11,7 @@ polygons = pickle.load(i)
 
 #This file holds the summary statistics for each country. The first list removes any old
 #version before starting a new version
+#the file paths will be to your local machine
 os.remove('/Volumes/PCCOMP/effechecka_test_results/country_stats.txt')
 out_file_x = open('/Volumes/PCCOMP/effechecka_test_results/country_stats.txt', 'a')
 out_file_x.write('country	geonamesid	taxa	obs\n')
@@ -37,6 +39,7 @@ for y in countries:
 	print(country)
 	geonames_id = y[1]
 	#the in_file is the tsv results from effechecka
+	#the file path will be to your local machine
 	in_file = open('/Volumes/PCCOMP/effechecka_country_results/' + country + '/' + country + '.tsv', 'r')
 	counter = 100000
 	kingdoms = []
@@ -233,6 +236,7 @@ for y in countries:
 				print(taxon) #keeps track of where I am
 	print('dictionaries complete') #make sure the code gets to the end
 	#creating all the output files for the TraitBank DwC-A
+	#these file paths will be to your local machine
 	out_file = open('/Volumes/PCCOMP/effechecka_test_results/' + country + '/tb_measurement.txt', 'w')
 	out_file_t = open('/Volumes/PCCOMP/effechecka_test_results/' + country + '/tb_taxon.txt', 'w')
 	out_file_c = open('/Volumes/PCCOMP/effechecka_test_results/' + country + '/tb_occurrence.txt', 'w')
