@@ -54,6 +54,8 @@ make_taxon_records_data.py - This code created a file called taxon_data.txt that
 
 make_wkstring.py - This code makes wkt strings for every polygon in low_res_countries.json. These are the wkt strings used by checklists_script_gen.sh
 
+meta.xml - This is a file that describes the contents of the DwC-A. It must be included in the archive. You should not have to change this.
+
 parent_dict.p - This dictionary is for looking up a parent for any taxon. The taxon is the key and its parent is the value. It is created by make_taxon_dict.py and Build_Taxon.ipynb. This dictionary is redone for every country.
 
 polygon_dict.p - This dictionary allows looking up a polygon by the corresponding country's geonames id. It was created by make_country_dict.py
@@ -65,6 +67,8 @@ rename_checklist.py - This code changes file names from a geonames id to a count
 taxon_data.txt - The results of make_taxon_records_data.py. It is a list of all families from each country and their number of observations.
 
 taxon_id.p - This dictionary is for looking up the taxon id for any taxon. The taxon is the key and its id is the value. It is created by make_taxon_dict.py and Build_Taxon.ipynb. The identifier is question is local and only valid within the Darwin Core Archive. This dictionary is redone for every country.
+
+tb_references.txt - This is the references file extension for the DwC-A. The Date accessed for GeoNames and Fresh Data MAY need to be changed.
 
 test_country.txt - I list of only a few countries used for testing purposes.
 
