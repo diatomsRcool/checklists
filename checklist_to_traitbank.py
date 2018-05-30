@@ -1,5 +1,6 @@
 #This code transforms the effechecka output into TraitBank DwC files
 #Be sure that the input and output file paths are set to your local machine
+#Be sure the 'date accessed' is correct in the tb_references.txt file
 
 import re
 import pickle
