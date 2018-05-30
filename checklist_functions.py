@@ -74,4 +74,3 @@ def genus_check(genus, species):
 			return(genus)
 	else:
 		return(genus)
-

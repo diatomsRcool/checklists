@@ -11,7 +11,7 @@ f = open('country_dict.p', 'rb')
 
 country_ids = pickle.load(f)
 
-for filename in os.listdir("."):
+for filename in os.listdir('/Volumes/PCCOMP/checklist'): #this path needs to point to the unzipped effechecka output
 	name = re.sub('.tsv', '', filename)
 	country = country_ids[name]
 	if not os.path.exists('/Volumes/PCCOMP/effechecka_country_results/' + country + '/'):
