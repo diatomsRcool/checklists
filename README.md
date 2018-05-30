@@ -16,6 +16,12 @@ Effechecka gives lists back as tsv files. These files are downloaded into a chec
 
 These need to be translated into DwC format for upload into TraitBank. This is done with checklist_to_traitbank.py which uses functions in checklist_functions.py. The first block of code makes the dictionaries needed to keep track of all the taxon ids and parent ids. The second block of code generates the TraitBank files. These files are compressed and uploaded into EOL opendata for eventual upload into TraitBank. Each country will have its own TraitBank DwC-A.
 
+I have not written any code to automatically generate the zipped archives for upload into opendata. This can be done manually or via the command line using the zipfile Python library. An example, that creates and archive for albania is below.
+
+python -m zipfile -c albania.zip tb_measurement.txt tb_occurrence.txt tb_taxon tb_references meta.xml
+
+The archive is submitted to https://opendata.eol.org/dataset/nationalchecklists manually.
+
 ## File Descriptions
 
 Build_Taxon.ipynb - Jupyter notebook that takes a tsv checklist and creates the dictionaries needed to manage the taxon and parent ids during the process of building the TraitBank Darwin Core Archives.
