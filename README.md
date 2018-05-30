@@ -4,11 +4,13 @@ This repository contains code for making checklists for countries using the effe
 
 ## Getting the Polygons
 
-GeoNames has an API that allows users to look up a country ID and get the geolocated polygon. Some of these polygons were too long, so the resolution of the national borders had to be reduced. The polygons were translated into wkt strings for submission to effechecka.
+GeoNames has an API that allows users to look up a country ID and get the geolocated polygon. Some of these polygons were too long, so the resolution of the national borders had to be reduced. The polygons were translated into wkt strings for submission to effechecka. Sometimes these wkt strings were too long to be submitted to the API. In that case, they had to be shortened by reducing the resolution using reduce_polygon.ipynb.
 
 ## Getting the lists
 
-The effechecka API was used in two steps. First, the query has to be submitted, then the results downloaded. Since these are very large lists, they can take some time between the initial query and completion of the list. The first time a query is submitted, effechecka starts compiling the list. The second time it is submitted, the results are downloaded, if they are ready. If they are not ready, you will have to submit the query again later. The Jenkins job will automatically do this for you, but not the jupyter notebook. The code for the Jenkins job is in checklists_script_gen.sh.
+The effechecka API was used in two steps. First, the query had to be submitted, then the results downloaded. Since these are very large lists, they can take some time between the initial query and completion of the list. The first time a query is submitted, effechecka starts compiling the list. The second time it is submitted, the results are downloaded, if they are ready. If they are not ready, you will have to submit the query again later. The Jenkins job will automatically do this for you, but not the jupyter notebook. The code for the Jenkins job is in checklists_script_gen.sh.
+
+When all of the checklists are complete and downloaded, the scripts compress all the lists. These need to be downloaded to a local machine outside of this directory because the files will be too large for GitHub.
 
 ## Making the TraitBank files
 
@@ -26,7 +28,11 @@ bird_data.txt - a list of all countries, their geonames ID, the number of bird s
 
 build_continent_dict.py - This code creates a look up dictionary from a list of contries and their continents. Country is the key and continent is the value. This code created continent_dict.p
 
+checklist_functions.py - This file contains commonly-used functions to prepare the tsv checklist for processing into TraitBank files. They are used in checklist_to_traitbank.py
+
 checklist_script_gen.sh - A bash script for creating the effechecka queries from a list of wkt strings (wkt_string.tsv). It also creates two other scripting files, checklist_status.sh and checklist_download.sh. These are the scripts that run in Jenkins. Every time this GitHub repository is updated, the Jenkins job is triggered. So, if the wkt_string.tsv file is updated, the scripts get run automatically.
+
+checklist_to_traitbank.py - This code iterates over the directory containing the checklists that were obtained via the Jenkins job (checklist_script_gen.sh). In the directory is a subdirectory containing the effechecka output (tsv) for each country. The code goes through each directory and creates a the taxon id and parent dictionaries needed to create the measurement, taxon, and occurrence files for each country-based DwC-A. The input is the tsv checklist. The outputs are the files for the TraitBank DwC-A. This code also outputs some summary stats for each country to a separate file.
 
 continent_dict.p - a dictionary for looking up a country's continent. Country name with underscore instead of spaces is the key and the two-letter continent abbreviation is the value. Use the Python pickle module to load the dictionary.
 
@@ -50,7 +56,7 @@ make_taxon_records_data.py - This code created a file called taxon_data.txt that
 
 make_wkstring.py - This code makes wkt strings for every polygon in low_res_countries.json. These are the wkt strings used by checklists_script_gen.sh
 
-parent_dict.p - This dictionary is for looking up a parent for any taxon. The taxon is the key and its parent is the value. It is created by make_taxon_dict.py and Build_Taxon.ipynb
+parent_dict.p - This dictionary is for looking up a parent for any taxon. The taxon is the key and its parent is the value. It is created by make_taxon_dict.py and Build_Taxon.ipynb. This dictionary is redone for every country.
 
 polygon_dict.p - This dictionary allows looking up a polygon by the corresponding country's geonames id. It was created by make_country_dict.py
 
@@ -58,13 +64,7 @@ reduce_polygon.ipynb - This code was used to reduce the length of the polygons t
 
 taxon_data.txt - The results of make_taxon_records_data.py. It is a list of all families from each country and their number of observations.
 
-taxon_id.p - This dictionary is for looking up the taxon id for any taxon. The taxon is the key and its id is the value. It is created by make_taxon_dict.py and Build_Taxon.ipynb. The identifier is question is local and only valid within the Darwin Core Archive.
-
-tb_measurement.txt - One of the data files for the TraitBank Darwin Core Archive. Created by make_tb_file.py or Make_TB_file.ipynb
-
-tb_occurrence.txt - One of the data files for the TraitBank Darwin Core Archive. Created by make_tb_file.py or Make_TB_file.ipynb
-
-tb_taxon.txt - One of the data files for the TraitBank Darwin Core Archive. Created by make_tb_file.py or Make_TB_file.ipynb
+taxon_id.p - This dictionary is for looking up the taxon id for any taxon. The taxon is the key and its id is the value. It is created by make_taxon_dict.py and Build_Taxon.ipynb. The identifier is question is local and only valid within the Darwin Core Archive. This dictionary is redone for every country.
 
 test_country.txt - I list of only a few countries used for testing purposes.
 
