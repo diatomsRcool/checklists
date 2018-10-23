@@ -14,7 +14,7 @@ polygons = pickle.load(i)
 #This file holds the summary statistics for each country. The first list removes any old
 #version before starting a new version
 #the file paths will be to your local machine
-os.remove('/Volumes/PCCOMP/effechecka_test_results/country_stats.txt')
+#os.remove('/Volumes/PCCOMP/effechecka_test_results/country_stats.txt')
 out_file_x = open('/Volumes/PCCOMP/effechecka_test_results/country_stats.txt', 'a')
 out_file_x.write('country	geonamesid	taxa	obs\n')
 

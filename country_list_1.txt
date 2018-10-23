@@ -203,7 +203,6 @@ Yemen	YE	69543
 Zambia	ZM	895949
 Zimbabwe	ZW	878675
 Hong Kong	HK	1819730
-Antarctica	AQ	6697173
 Puerto Rico	PR	4566966
 Tibet	TI	1279685
 Mayotte		1024031
